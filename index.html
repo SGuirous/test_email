@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <title>Tests Devs Maquetting</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+        :root{
+            --primary: rgb(80,159,125);
+            --primaryfont:rgb(80,110,125);
+        }
+        
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            
+        }
+
+        body{
+            font-family: 'Roboto', sans-serif;
+            font-size: 100%;
+            
+        }
+
+        .wraper{
+            padding: 1px 1px;
+            margin: 10px 10px;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+            height: fit-content;
+         
+
+        }
+
+        .navbar{
+            padding-top: 30px;
+            height: fit-content;
+        }
+
+       
+
+        img{
+            padding-top: 10px;
+            width:100%;
+        }
+
+        .navbar p{
+            
+            text-align: center;
+            color: #808080;
+            font-size: 0.9rem;
+        }
+        
+        .box .navbar p,a{
+            color: #808080;
+            
+        }
+
+        h1, h2{
+            margin: 20px;
+            text-align: center;
+            color: var(--primaryfont);
+        }
+
+        h1{
+            font-size:2.5em;
+        }
+        
+        .container{
+            background-color: var(--primary);
+            height: fit-content;
+            max-width: 900px;
+            margin: 30px auto;
+            padding-bottom: 10px;
+            
+        }
+        
+        .section{
+            /*margin-top: 10px;*/
+            height:fit-content;
+            max-width: auto;
+            text-align: center;
+        }
+
+        .section img{
+            height: 120px;
+            width: 120px;
+        }
+        #picto_ampoule{
+            
+            padding-top: 10px;
+            display: block;
+
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            width: 60px;
+            
+            object-fit: cover;
+            
+        }
+        #discover{
+
+            font-size:2.5em;
+            font-weight:700;
+            color:white;
+        }
+        #appointment{
+            margin-top: 20px;
+            padding: 10px 10px;
+            font-size:1.5em;
+            font-weight:700;
+            color:white;
+        }
+        .appoint{
+            max-width: fit-content;
+            margin: 0px auto;
+            padding: 0 40px;
+            background-color: #b3246b;
+        }
+
+        #availability{
+            margin-top:20px;
+            color: white;
+            font-size:1.4em;
+        }
+
+        #email{
+            margin-top: 30px;
+            color:white;
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+        #mobile{
+            margin-top:5px;
+            color:white;
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+        .box{
+            background-color: white;
+            height: fit-content;
+            max-width: 900px;
+            margin: 30px auto 0px auto;
+            /*margin-bottom: 0;*/
+
+        }
+        #picto_meeting{
+        padding-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        height: 100%;
+        width: 80px;
+        object-fit: cover;}
+
+        .box h1{
+            margin-top: 0;
+        }
+
+        .box h2{
+            margin-bottom: 0px;
+            color:var(--primary);
+            font-size: 1.8em;
+        }
+        .box p{
+            font-size:1.5em;
+            color: var(--primaryfont);
+        }
+
+        #results{
+            text-align: center;
+        }
+
+        .box-container{
+            
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+            text-align: center;
+            
+        }
+
+       
+        .box1, .box2{
+            
+            text-align: center;
+        }
+
+        .box1{
+            max-width: 300px;
+            
+        }
+        .box2{
+            max-width: 400px;
+        }
+
+        .box1 p, .box2 p{
+            font-size: 1.8em;
+            color:var(--primary);
+            
+        }
+
+        .custom{
+            color: #b3246b;
+            text-transform: uppercase;
+            font-weight: 700;
+
+        }
+
+        .line{
+            height: 2px;
+            max-width:900px;
+            margin: 2rem auto;
+            background-color:var(--primaryfont);
+        }
+
+        .acknowlegment p{
+            font-size: 1em;
+            color:black;
+            font-weight: 500;
+            
+        }
+        <!--Footer-->
+      
+        
+
+        .box-pied p{
+            padding-top:20px;
+            background-color: #eeeded;
+            text-align: center;
+            color: #808080;
+            font-size: 1.2em;
+        }
+
+        
+
+        #pied{
+            height:100%;
+        }
+
+        .client{
+            font-size: 1.4rem;
+        }
+
+       
+            
+        
+    
+    @media(max-width: 800px){
+        .box-container{
+            
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+    }
+
+        .box1{
+            width: auto;
+        }
+
+}
+
+       
+
+
+
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="wraper">
+        <div class="navbar">
+            
+            <p>If you can’t read this message, 
+            <a href="#">click here</a></p>
+                       
+            <img src="./img/image_header.png" alt="header">
+        </div>
+        <h2>Praesent semper mi id egestas malesuada el vulputate nulla</h2>
+        <h1>Ut dignissim at ipsum <br>sed accumsan semper mi id egestas</h1>
+        <div class="container">
+            <div class="section">
+                <img id="picto_ampoule" height="60" width="60" src="./img/picto_ampoule.png" alt="ampoule">
+            </div>
+            <div class="section">
+                <p id="discover">Want to discover the lorem ipsum?</p>
+                <div class="appoint">
+                    <p id="appointment">Make an appointment with me</p>
+                </div>
+            
+                
+                <p id="availability">I am available to discuss with you. Please contact me to arrange a call together.</p>
+                <p id="email">eMail Address: franck.gaston@societe.com</p>
+                <p id="mobile">Mobile : 00 11 22 33 44</p>
+            </div>
+        </div>
+
+        <div class="box">
+                <div class="section">
+                    <img id="picto_meeting" src="img/picto_meeting.png" alt="meeting">
+                </div>
+                <h1>Before our meeting</h1>
+                <h2>Here is a preview of the lorem ipsum</h2>
+                <p id="preview"><b>Ut dignissim at ipsum</b> sed accumsan. Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc vel vulputate nulla. 
+                </p>
+                <h2>The results</h2>
+                <p id="results">Ut dignissim at ipsum sed accumsan. Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc, vel vulputate nulla. Phasellus metus arcu, consectetur ac lectus vitae, rutrum aliquet lacus. Aliquam eget cursus est
+                </p>
+        </div>
+                
+        <div class="box-container">
+            <div class="box1">
+                <div class="section">
+                    <p id="soleil_rouge"><img src="./img/soleil_rouge.png"  alt="soleil-rouge"></p>
+                </div>
+                <p id="treatment">of patients treated maintained a powerfull decrease of BP for<br>
+                <span class="custom">6 months</span></p>
+
+            </div>
+            <div class="box2">
+                <div class="section">
+                    <p id="soleil_jaune"><img src="./img/soleil_jaune.png"  alt="soleil-jaune"></p>
+                </div>
+                <p id="morning">lorem ipsum</p>
+                <p id="lorem">A significant decrease of the morning rise was achieved with <span class="custom">LOREMIPSUM</span></p>
+
+            </div>
+        </div>
+        <div class="box">
+            <p>Ut dignissim at ipsum sed accumsan. Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc, vel vulputate nulla. Phasellus metus arcu, consectetur ac lectus vitae, rutrum aliquet lacus. Aliquam eget cursus est, egestas fringilla ipsum. Donec et massa orci. Nullam posuere dictum libero nec pharetra</p>
+            <br>
+            <p>Your representative</p><br>
+            <p><b>Frank Gaston</b></p><br>
+            <p><b>Email:</b> franck.gaston@societe.com</p>
+            <p><b>Mobile:</b> 00 11 22 33 44</p>
+        </div>
+        <div class="line"></div>    
+        <div class="box acknowlegment"><p>Ut dignissim at ipsum sed accumsan. Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc, vel vulputate nulla. Phasellus metus arcu, consectetur ac lectus vitae, rutrum aliquet lacus. Aliquam eget cursus est, egestas fringilla ipsum. Donec et massa orci. Nullam posuere dictum libero nec pharetra Ut dignissim at ipsum sed accumsan. Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc, vel vulputate nulla. Phasellus metus arcu, consectetur ac lectus vitae, rutrum aliquet lacus. Aliquam eget cursus est, egestas fringilla ipsum. Donec et massa orci. Nullam posuere dictum libero nec phare<br>
+            <br>
+            Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc, vel vulputate nulla. Phasellus metus arcu, consectetur ac lectus vitae, rutrum aliquet lacus. Aliquam eget cursus est, egestas fringilla ipsum. Donec et massa orci. Nullam Ut dignissim at ipsum sed accumsan. Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc, vel vulputate nulla. Phasellus metus arcu, consectetur ac lectus vitae, rutrum aliquet lacus. Aliquam eget cursus est, egestas fringilla ipsum. Donec et massa orci.<br>
+            <br>
+            Ut dignissim at ipsum sed accumsan. Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc, vel vulputate nulla. Phasellus metus arcu, consectetur ac lectus vitae, rutrum aliquet lacus. Aliquam eget cursus est, egestas fringilla ipsum. Donec et massa orci. Nullam posuere dictum libero nec pharetra
+            </p>
+        </div>  
+        
+    
+    
+        
+            <div class="box">
+                <div class="box-pied">
+                    <p><span class="client"><b>If you are not interested in receiving more emails like this one, just hit <a href="#">Unsubscribe.</a></b></span>
+                    <br><br>
+                    Ut dignissim at ipsum sed accumsan. Praesent semper mi id egestas malesuada. Etiam eget malesuada nunc, vel vulputate nulla. Phasellus metus arcu, consectetur ac lectus vitae, rutrum aliquet lacus. Aliquam eget cursus est, egestas fringilla ipsum. Donec et massa orci. Nullam posuere dictum libero nec pharetra
+                    <br><br>
+                    Confidential - To be adapted and approved at local level prior to use - Prepared by headquarters.
+                    <br><br>
+                    XXXXXXXXXXX - NOVEMBER 2020</p>
+                    <img id="pied" src="./img/image_footer.png" alt="footer">
+                </div>
+            </div>
+            
+        
+      
+    </div>
+</body>
+
+</html>
