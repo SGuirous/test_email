@@ -1,2 +1,2 @@
 # test_email
-Responsive email
+Responsive html with pictures.
